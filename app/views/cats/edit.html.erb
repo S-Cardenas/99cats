@@ -1,0 +1,41 @@
+<h1>Edit Your Cat</h1>
+<%= render partial: "form" %>
+
+<!-- <br>
+<form  action="/cats" method="get">
+  <input type="hidden" name="_method" value="patch">
+  Name: <input type='text' name='cat[name]' value="<%= @cat.name %>">
+  <br>
+  <%
+    if @cat.sex == 'M'
+      male_checked = "checked"
+    else
+      female_checked = "checked"
+    end
+  %>
+  <input type='radio' name='cat[sex]' value='M' <%= male_checked %> > Male
+  <br>
+  <input type='radio' name='cat[sex]' value='F' <%= female_checked %>> Female
+  <br>
+  <%= red_selected = "selected" if @cat.color == 'red'
+      blue_selected = "selected" if @cat.color == 'blue'
+      green_selected = "selected" if @cat.color == 'green'
+      white_selected = "selected" if @cat.color == 'white'
+      yellow_selected = "selected" if @cat.color == 'yellow'%>
+  <% @cat.color %>
+  <select name="cat[color]">
+    <option>Pick a Color</option>
+    <option <%=red_selected%> value="red">Red</option>
+    <option <%=blue_selected%> value="blue">Blue</option>
+    <option <%=green_selected%> value="green">Green</option>
+    <option <%=white_selected%> value="white">White</option>
+    <option <%=yellow_selected%> value="yellow">Yellow</option>
+  </select>
+  <br>
+  Cat's Birthday: <input value="<%= @cat.birth_date %>" type="date" name="cat[birth_date]">
+  <br>
+  Description:
+  <textarea name="cat[description]"> <%= @cat.description %> </textarea>
+  <br>
+  <input type="submit" value="Submit"/>
+</form> -->
